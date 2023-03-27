@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+div#paginacion {
+  border: 1px solid #CCC;
+  background-color: #E0E0E0;
+  padding: .5em;
+}
+.derecha {
+  float: right;
+}
+.izquierda {
+  float: left;
+}
+div.clear {
+  clear: both;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: lightgreen;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.link {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.link a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.foto {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.title {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.info::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+table{
+  font-weight: bold;
+}
+.link a{
+  margin-left: 16cm;
+}
+th, td {
+        border-bottom: 1px solid #ddd;
+    }
+#planti {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  }
+
+#planti td, #planti th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+#planti tr:nth-child(even){background-color: #f2f2f2;}
+#planti tr:hover {background-color: #ddd;}
+
+#planti th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#foto{
+  float: left;
+  height: 50cm;
+  width: 75cm;
+  margin-top: 5cm;
+}
+#foto h2{
+  margin-left: 7cm;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+#historico {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 7cm;
+}
+
+#historico td, #clasi th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#historico tr:nth-child(even){background-color:goldenrod}
+#historico tr:hover {background-color:darkkhaki;}
+
+#historico th {
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#historia{
+  background-color: wheat;
+}
+</style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Bienvenidos a la p&aacute;gina del Real Betis</h1>
+        <img src="images.png">
+    </header>
+
+<div class="link">
+  <a href="https://www.realbetisbalompie.es/">Acceda a la web oficial del Real Betis</a>
+</div>
+
+<div class="info">
+  <div class="leftcolumn">
+    <div class="title">
+      <h2>Bienvenidos a la seccion de informaci&oacute;n sobre el Real Betis Balompi&eacute;</h2>
+      <h5>Esta p&aacute;gina no es la web oficial del Real Betis si quiere acceder a ella acceda al enlace de arriba</h5>
+      <p><a href="Formulario Sorteo Entrada.html">Acceda para entrar en un sorteo de una entrada para cualquier partido del Real Betis</a></p>
+    </div>
+    <div class="info">
+      <div id="Real">
+        <h2>Esto es el Real Betis</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V1IgoM8JwW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="foto">
+      <h2>FOTO OFICIAL PLANTILLA REAL BETIS BALOMPI&Eacute;</h2>
+      <img src="foto-oficial-betis-U02603547516wkE-1200x630@abc.jpg">
+    </div>
+    <div id="historico">
+      <h2>Historico de participaciones en La Liga</h2>
+      <table border="1">
+        <tr>
+          <td>Temporada</td>
+          <td>Liga</td>
+          <td>Division</td>
+          <td>Posicion</td>
+        </tr>
+        <tr>
+          <td>22/23</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>5º</td>
+        </tr>
+        <tr>
+          <td>21/22</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>5º</td>
+        </tr>
+        <tr>
+          <td>20/21</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>6º</td>
+        </tr>
+        <tr>
+          <td>19/20</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>15º</td>
+        </tr>
+        <tr>
+          <td>18/19</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>10º</td>
+        </tr>
+        <tr>
+          <td>17/18</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>6º</td>
+        </tr>
+        <tr>
+          <td>16/17</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>15º</td>
+        </tr>
+        <tr>
+          <td>15/16</td>
+          <td>LigaBBVA</td>
+          <td>Primera Division</td>
+          <td>10º</td>
+        </tr>
+        <tr>
+          <td>14/15</td>
+          <td>LigaAdelante</td>
+          <td>Segunda Division</td>
+          <td>1º</td>
+        </tr>
+        <tr>
+          <td>13/14</td>
+          <td>LigaBBVA</td>
+          <td>Primera Division</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>12/13</td>
+          <td>LigaBBVA</td>
+          <td>Primera Division</td>
+          <td>7º</td>
+        </tr>
+        <tr>
+          <td>11/12</td>
+          <td>LigaBBVA</td>
+          <td>Primera Division</td>
+          <td>12º</td>
+        </tr>
+        <tr>
+          <td>10/11</td>
+          <td>LigaAdelante</td>
+          <td>Segunda Division</td>
+          <td>1º</td>
+        </tr>
+        <tr>
+          <td>09/10</td>
+          <td>LigaAdelante</td>
+          <td>Segunda Division</td>
+          <td>3º</td>
+        </tr>
+        <tr>
+          <td>08/09</td>
+          <td>LigaBBVA</td>
+          <td>Primera Division</td>
+          <td>18º</td>
+        </tr>
+        <tr>
+          <td>07/08</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>14º</td>
+        </tr>
+        <tr>
+          <td>06/07</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>16º</td>
+        </tr>
+        <tr>
+          <td>05/06</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>14º</td>
+        </tr>
+        <tr>
+          <td>04/05</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>4º</td>
+        </tr>
+        <tr>
+          <td>03/04</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>02/03</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>01/02</td>
+          <td>LaLiga</td>
+          <td>Primera Division</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>00/01</td>
+          <td>Segunda Division</td>
+          <td>Segunda Division</td>
+          <td>2</td>
+        </tr>
+    </table>
+    </div>
+    <div id="historia">
+    <h3>LA HISTORIA</h3>
+    <p>
+      En 1907, un grupo de estudiantes de la Escuela Politécnica, situada en la calle Cervantes, que cursaban estudios preparatorios 
+      para la carrera militar y para medicina funda el Sevilla Balompié. Entre ellos había muchos grupos de hermanos: los Hermosa, 
+      Wesolowski, Castillo, Cascales y Gutiérrez. Vestían de blanco y azul. Su primer presidente fue Alfonso del Castillo Ochoa y el primer capitán 
+      que hacía las veces de entrenador-, en 1914, Manuel Ramos Asencio. La sede social se ubicó en la calle Alfonso XII (1907-1909), 
+      Federico de Castro (1910-1911) y Jerónimo Hernández (1912-1914).
+    </p><br>
+    <p>
+      El nombre elegido por el grupo de jóvenes, con el que pretendieron evitar la expresión inglesa foot-ball, 
+      ha acabado por convertirse en su seña de identidad: "Sevilla BALOMPIÉ" (los primeros meses, "España Balompié", 
+      también con camisa azul y pantalón blanco). El club se inscribió en el Gobierno Civil el 1 de febrero de 1909.
+    </p><br>
+    <p>
+      Muy pronto, el "Balompié" se dio a conocer al convertirse en 1910 en el primer vencedor de la Copa de Sevilla, 
+      condición que revalidó y ostentó en 1911, 1912 y 1915. Participó también en la primera edición de la Copa de Andalucía a 
+      principios de 1910 y fue invitado a participar en la Copa de España, aunque no acudió por motivos económicos.
+    </p><br>
+    <p>
+      En 1909 nació el Betis Foot-ball Club, según relatos orales como consecuencia de una escisión en el Sevilla Foot-ball Club: 
+      Eladio García de la Borbolla, hasta entonces miembro de la junta directiva del Sevilla Foot-ball Club, decidió abandonarlo y 
+      fundar su propio equipo. De esta forma apareció el Betis Foot-ball Club, cuya sede social estuvo en la calle Mariscal (1909-1911) y en 
+      Federico de Castro (1912-1914).
+    </p><br>
+    <p>
+      En 1914 el Balompié volvió a proclamarse Campeón de Sevilla e iniciará los trámites para la fusión 
+      con el Betis Foot-ball Club que, disuelto en 1913, había sido reorganizado al año siguiente bajo la colaboración de José Gutiérrez, 
+      Eladio García de la Borbolla y Miguel Folgado entre otros; concediéndose el título de "Real" por parte de Alfonso XIII, gracias a la intervención 
+      decisiva del Marqués de Mochales.
+    </p><br>
+    <p>
+      El 6 de diciembre de 1914, la Junta Directiva del Sevilla Balompié y dos días más tarde el Betis Foot-ball Club, 
+      aprobaron la fusión de ambos clubes, gracias a la participación importantísima de Herbert Richard "Papá" Jones. 
+      En agosto de 1915, el Gobernador Civil de Sevilla, Severo Núñez, aprobó los Estatutos y el cambio de denominación del club absorbente, 
+      disponiendo que se modificara la denominación del "Sevilla" Balompié por la de "Real Betis" Balompié (apunte nº 283 página 36 del Libro 
+      de Gobierno del Registro Civil). El Balompié aportó los jugadores, el palmarés, la afición y el terreno de juego, que desde 1913 era el 
+      Campo de las Tablas Verdes, en diversas ubicaciones en el Prado de San Sebastián, mientras el Betis F.C. aportó principalmente el título de Real, 
+      hasta tal punto que el club continuó siendo conocido popularmente como "el Balompié" y sus aficionados como "los balompedistas" hasta los años treinta, 
+      a partir de cuando la denominación "Betis" y el gentilicio "bético" se abrió paso en la terminología popular para referirse al Real Betis Balompié 
+      y sus seguidores.
+    </p><br>
+    <p>
+      Tras volver a proclamarse Campeón de Sevilla en 1915, el Balompié inició una década de lento declive en la que rozó la desaparición, 
+      al no disponer de medios económicos ni derecho de retención de jugadores en la época del "amateurismo marrón", o profesionalismo encubierto. 
+      Además, la mayoría de los jugadores fundadores envejecían. Más de una decena de sus mejores jugadores fueron "captados" en poco tiempo, 
+      a pesar de lo cual estuvo a punto en 3 ocasiones de ganar el Campeonato de Andalucía como única alternativa al Sevilla F.C., 
+      nutrido de jugadores que habían abandonado el Balompié. En 1918 los béticos estrenan el terreno de juego del Patronato. 
+      Los colores azul pavo real y blanco continuaron en los béticos hasta 1920 alternándose con los verdiblancos, 
+      según las fuentes de que se dispone.
+    </p><br>
+    <h3>EL "MANQUEPIERDA"</h3>
+    <p>
+      Difícilmente puede entenderse lo que es el Betis sin mencionar los 7 años que jugó en Tercera, 
+      porque entonces tanto el club como su afición encontraron una seña de identidad que le acompaña aún en la actualidad. 
+      Según muchos autores, su "alma", que se halla en una expresión que en los años 50 despertó la simpatía de toda España: 
+      "¡Viva er Beti manque pierda!". El poeta Joaquín Romero Murube describió aquellos tiempos y aquella expresión con las siguientes palabras: 
+      "El Betis llegó a formar una inderrocable moral a prueba de derrotas. Pero en vez de adoptar esa inexplicable renunciación que hemos aplicado, 
+      para nuestra desgracia, a tantas adversidades -la de subirnos los hombros en vez de subirnos de corazón-, el Betis, tras la hecatombe, 
+      arremetía todas las tardes con más entusiasmo hacia la conquista de su gloria".
+    </p><br>
+    <p>
+      Fueron los años de los bocadillos de tortilla, de las rifas, de la inundación completa del Estadio como consecuencia del desborde del Tamarguillo. 
+      Son años de Pascual Aparicio, Juan Petralanda, Manuel Ruiz Rodríguez, Alfonso Jaramillo, José María de la Concha, Manuel Simó y tantos otros.
+    </p>
+    <p>
+      Y el Betis superó esos años con la ayuda de una afición que consigue llevar al club de regreso a Segunda División en 1954, 
+      ganando fama por llenar su estadio y por las "marchas verdes" en los desplazamientos. Atrás quedaron años de tremendas dificultades económicas, 
+      en los que principalmente unos pocos mantuvieron vivo al club. La experiencia en Tercera fortaleció extraordinariamente al club en términos sociológicos y 
+      le confirió un carácter que lo hace único.
+    </p><br>  
+    <p>
+      Pocos dudaron tras la celebrada vuelta del Betis a Segunda en 1954 que ascendería a Primera tarde o temprano. 
+      No obstante, hubo que esperar hasta cuatro años más tarde, hasta e1 de junio de 1958, 
+      para ver al Real Betis Balompié como equipo de Primera División.
+    </p><br>
+    <h3>ACTUALIDAD DEL BETIS</h3>
+    <p>
+      Tras ser levantadas parcialmente las medidas cautelares en el verano de 2015, los accionistas de referencia, 
+      Ángel Haro García y José Miguel López Catalán, ganan la Junta General Extraordinaria de Accionistas del 23 de septiembre de ese año con el 
+      apoyo masivo de los béticos. Desde febrero de 2016, Ángel Haro es el presidente del Real Betis, con un proyecto nacido para lograr el crecimiento deportivo, 
+      la profesionalización y el avance del Real Betis Balompié en todas las áreas sociales, económicas y futbolísticas. En definitiva, 
+      la adaptación de un club histórico al fútbol del siglo XXI, con la única pretensión de colocar al Real Betis Balompié en sus diferentes facetas 
+      a la altura de su inigualable afición.
+    </p><br>
+    <p>
+      En base a este impulso, el Real Betis va consolidando un notable crecimiento en todos los sectores. 
+      Fruto de ello es el éxito deportivo obtenido en la temporada 2017-18, en la que retorna de nuevo a las competiciones 
+      continentales después de completar un curso extraordinario en el que sumó 60 puntos y alcanzó el sexto puesto de la clasificación. 
+      Un lugar privilegiado al que se hizo merecedor por su juego fluido, su apuesta por el balón, su propuesta dominadora y su valentía en cada encuentro.
+      Un brillante ejercicio que, además, permitió vivir algunos momentos que ya forman parte de la historia. Recuerdos tan agradables como el triunfo 
+      en el campo del Real Madrid, campeón de Europa, y la goleada deslumbrante por 3-5 en el feudo del eterno rival.
+    </p><br>
+    <p>
+      Este logro era, sin duda, la primera confirmación de los objetivos propuestos por los máximos dirigentes de la entidad, 
+      Ángel Haro y José Miguel López Catalán, desde el momento mismo de su llegada a la entidad. Un ambicioso proyecto que incluía la unidad del beticismo, 
+      la regeneración de la entidad, la normalización institucional, la devolución del protagonismo a los socios y accionistas, el crecimiento económico del club, 
+      la mejora y ampliación de las instalaciones del estadio Benito Villamarín y la apuesta por un proyecto deportivo que hiciera regresar los triunfos y 
+      llevara de nuevo al equipo a las competiciones europeas.
+    </p><br>
+    <p>
+      Antes de dar comienzo la temporada 2017-18 fue inaugurado oficialmente el nuevo Gol Sur de Heliópolis. 
+      El punto y final a una magna obra que duró un año y que permitió reemplazar la vieja gradona de 1972. 
+      Una transformación radical que se vio complementada con importantes mejoras estéticas y técnicas que le otorgaron una imagen más moderna y 
+      vanguardista al coliseo bético. El color verde y las formas triangulares del escudo se adueñaron del interior del estadio, que también presentaba una nueva 
+      iluminación con soluciones mucho más sostenibles. La afición, satisfecha, celebró extasiada esa nueva colosal tribuna que convertía al estadio Benito Villamarín, 
+      con capacidad para 60.721 espectadores, en el cuarto campo con mayor aforo de la Liga en España tras el Camp Nou, el Santiago Bernabéu y el Wanda Metropolitano.
+    </p><br>
+    <p>
+      Un gran acontecimiento al que siguió otro momento estelar en la historia del club. 
+      El vivido el 23 de noviembre de 2017, fecha en que se celebró una Junta General Ordinaria de Accionistas que entraría en la historia de la entidad. 
+      Una cita fundamental, ya que en ella los accionistas del Real Betis aprobaron por mayoría abrumadora el acuerdo suscrito por el club con Manuel Ruiz de Lopera y 
+      Bitton Sport, que permitió la compra de las acciones de estos y sirvió para cerrar el largo litigio judicial que tanto lastraba el desarrollo de la institución.
+    </p><br>
+    <p>
+      De este acuerdo ratificado por el accionariado bético nacería el proceso de venta de acciones con el que la entidad consiguió democratizarse 
+      al máximo con una gran atomización de los títulos. El Betis de los béticos.
+    </p><br>
+  </div>
+  </div>
+</div>
+ 
+  <div class="rightcolumn">
+    <content>
+        <div id="titu">
+            <h3>Aqu&iacute; encontrar&aacute; informaci&oacute;n que le puede ser relevante acerca del Real Betis</h3>
+        </div>
+        <div id="info">
+            <h2>Los m&aacute;ximos goleadores del Real Betis son</h2>
+            <ol>
+                <li>Borja Iglesias 11 goles</li>
+                <li>Sergio Canales 4 goles</li>
+                <li>Juanmi 4 goles</li>
+                <li>Fekir 2 goles</li>
+            </ol>
+    <h3>Estos futbolistas forman la plantilla del betis para la temporada 22/23</h3>
+
+    <table id="planti" border="1">
+        <tr>
+            <td>Plantilla del Real Betis</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>1.Claudio Bravo</td>
+            <td><img src="descarga (3).jfif"></td>
+        </tr>
+        <tr>
+            <td>2.Rui Silva</td>
+            <td><img src="descarga (4).jfif" alt=""> </td>
+        </tr>
+        <tr>
+            <td>3.Dani Martin</td>
+            <td><img src="descarga (3).png"</td>
+        </tr>
+        <tr>
+            <td>4.Martin Montoya</td>
+            <td><img src="descarga (24).jfif"></td>
+        </tr>
+        <tr>
+            <td>5.Edgar González</td>
+            <td><img src="descarga (22).jfif"></td>
+        </tr>
+        <tr>
+            <td>6.Victor Ruiz</td>
+            <td><img src="descarga (21).jfif"></td>
+        </tr>
+        <tr>
+            <td>7.German Pezzella</td>
+            <td><img src="descarga (12).jfif"></td>
+        </tr>
+        <tr>
+            <td>8.Luiz Felipe</td>
+            <td><img src="descarga (13).jfif"></td>
+        </tr>
+        <tr>
+            <td>9.Abner Vinicius</td>
+            <td><img src="descarga (23).jfif"></td>
+        </tr>
+        <tr>
+            <td>10.Yousuff Sabaly</td>
+            <td><img src="descarga (19).jfif"></td>
+        </tr>
+        <tr>
+            <td>11.Fran Delgado</td>
+            <td><img src="descarga (20).jfif"></td>
+        </tr>
+        <tr>
+            <td>12.Juan Miranda</td>
+            <td><img src="descarga (18).jfif"></td>
+        </tr>
+        <tr>
+            <td>13.Paul Akoukou</td>
+            <td><img src="descarga (16).jfif"></td>
+        </tr>
+        <tr>
+            <td>14.Guido Rodr&iacute;guez</td>
+            <td><img src="descarga (17).jfif"></td>
+        </tr>
+        <tr>
+            <td>15.Sergio Canales</td>
+            <td><img src="descarga (6).jfif" alt=""> </td>
+        </tr>
+        <tr>
+            <td>16.Luiz Henrique</td>
+            <td><img src="descarga (15).jfif"></td>
+        </tr>
+        <tr>
+            <td>17.William Carvalho</td>
+            <td><img src="descarga (10).jfif"></td>
+        </tr>
+        <tr>
+            <td>18.Joaqu&iacute;n</td>
+            <td><img src="descarga (11).jfif" </td>
+        </tr>
+        <tr>
+            <td>19.Ayoze P&eacute;rez</td>
+            <td><img src="descarga (7).jfif" </td>
+        </tr>
+        <tr>
+            <td>20.Aitor Ruibal</td>
+            <td><img src="descarga (14).jfif"></td>
+        </tr>
+        <tr>
+            <td>21.Juan Cruz Díaz Esposito</td>
+            <td><img src="images (1).jfif"></td>
+        </tr>
+        <tr>
+            <td>22.Rodri S&aacute;nchez</td>
+            <td><img src="descarga (9).jfif"></td>
+        </tr>
+        <tr>
+            <td>23.Juanmi</td>
+            <td><img src="descarga (8).jfif"></td>
+        </tr>
+        <tr>
+            <td>24.Borja Iglesias</td>
+            <td><img src="descarga (5).jfif" alt=""> </td>
+        </tr>
+        <tr>
+            <td>25.Nabil Fekir</td>
+            <td><img src="images.jfif" </td>
+        </tr>
+        <tr>
+            <td>26.William Jos&eacute;</td>
+            <td><img src="descarga (2).jfif"></td>
+        </tr>
+    </table>
+    <div class="card">
+        <p>Actualmente el Real Betis se encuentra en 5 posici&oacute;n</p>
+
+        <p>Hoy d&iacute;a jueves 16/03/2023 se disputar&aacute; el encuentro de vuelta de octavos de final de la UEL entre Real Betis vs Manchester United a las 18:45</p>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div>
+        <div id="paginacion">
+            <span class="izquierda"><a href="Tabla de goleadores.html">&laquo; Anterior</a></span><span class="derecha"><a href="index.html">Introduccion</a>
+        <div class="clear"></div>
+    </div>
+</footer>
+
+</body>
+</html>

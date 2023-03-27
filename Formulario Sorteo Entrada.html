@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorteo</title>    
+        <style>
+            body{
+                background-image:url(descarga\ \(1\).jfif);
+            }
+            form{
+                background-color: white;
+            }
+            h1{
+                background-color: crimson;
+                text-align: center;
+            }
+            p{
+                font-weight: bold;
+            }
+            legend{
+                font-weight: bold;
+                font-size: 155%;
+            }
+            input[type=text] {
+            border: 2px solid green;
+            border-radius: 4px;
+            }
+            input[type=email] {
+            border: 2px solid green;
+            border-radius: 4px;
+            }
+            input[type=text]:focus {
+                border: 3px solid #555;
+            }
+            input[type=email]:focus {
+            border: 3px solid #555;
+            }
+            form{
+                text-align: center;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #04AA6D;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        <div>
+            <h1>PUEDE GANAR UNA ENTRADA PARA VER UN PARTIDO DEL REAL BETIS</h1>
+            <form caption="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php." method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <p>Nombre<input type="text" name="nombre" size="60" required></p>
+                    <p>Apellidos<input type="text" name="nombre" size="60" required></p>
+                    <p>N&uacute;mero de tel&eacute;fono<input type="text" name="tel&eacute;fono" size="8"></p>
+                    <p>Correo electr&oacute;nico<input type="email" name="email" required></p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
